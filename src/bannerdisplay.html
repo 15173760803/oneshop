@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .sum {
+            width: 100%;
+
+        }
+
+        .first {
+            width: 1200px;
+            height: 30px;
+            background-color: gainsboro;
+            margin: 0 auto;
+        }
+
+        .first-left {
+            width: 300px;
+            height: 50px;
+            float: left;
+        }
+
+        .little {
+            color: blue;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .first-right {
+            width: 600px;
+            height: 50px;
+            float: right;
+        }
+
+        .first-right ul {
+            list-style-type: none;
+        }
+
+        .first-right li {
+            display: inline-block;
+
+        }
+
+        .first-right a {
+            text-decoration: none;
+            font-size: 12px;
+            color: gray;
+        }
+
+        #servesum {
+            font-size: 12px;
+            color: gray;
+        }
+
+        .gun2 {
+            width: 1px;
+            height: 14px;
+            background-color: lightgray;
+        }
+
+        .second {
+            width: 1200px;
+            height: 100px;
+            background-color: lightgoldenrodyellow;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .second-left {
+            width: 210px;
+            height: 100px;
+            background-color: aquamarine;
+            float: left;
+
+        }
+
+        .logo {
+            position: absolute;
+            top: 12px;
+            left: 40px;
+
+        }
+
+        .second-right {
+            width: 600px;
+            height: 100px;
+            background-color: darkorange;
+            float: left;
+        }
+
+        .second-right-one {
+            width: 600px;
+            height: 50px;
+            background-color: lightblue;
+            position: relative;
+        }
+
+        .btna {
+            width: 80px;
+            height: 25px;
+            border: none;
+            border-bottom: 2px solid red;
+            border-left: 2px solid red;
+            border-top: 2px solid red;
+            position: absolute;
+            top: 23px;
+            left: 5px;
+
+        }
+
+        .btnb {
+            width: 80px;
+            background-color: red;
+            height: 25px;
+            border: none;
+            position: absolute;
+            top: 23px;
+            left: 515px;
+
+        }
+
+        .textone {
+            outline: none;
+            width: 430px;
+            height: 21px;
+            border-bottom: 2px solid red;
+            border-top: 2px solid red;
+            position: absolute;
+            top: 23px;
+            left: 85px;
+            padding-left: 5px;;
+        }
+
+        .second-right-two {
+            width: 600px;
+            height: 50px;
+        }
+
+        .second-right-two ul {
+            list-style-type: none;
+            margin-left: 30px;
+        }
+
+        .second-right-two li {
+            display: inline-block;
+            margin-left: 10px;
+
+        }
+
+        .second-right-two a {
+            text-decoration: none;
+            color: gray;
+            font-size: 12px;
+        }
+
+        .header {
+            width: 100%;
+            height: 398px;
+            background-color: red;
+            margin-bottom: 20px;
+        }
+
+        .header-top {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: yellowgreen;
+        }
+
+        .header-top-right ul {
+            list-style-type: none;
+        }
+
+        .header-top-right li {
+            display: inline-block;
+            margin-left: 10px;
+
+        }
+
+        .header-top-right a {
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+
+        }
+
+        .header-top-right {
+            float: left;
+        }
+
+        .header-top-left {
+            float: left;
+            background-color: red;
+            width: 210px;
+            height: 40px;
+
+        }
+
+        .header-left-botton {
+            background-color: darkred;
+            width: 210px;
+            height: 398px;
+
+        }
+
+        .title {
+            font-size: 16px;
+            color: white;
+            font-family: "微软雅黑";
+            font-weight: 100;
+            line-height: 50px;
+            text-indent: 55px;
+
+        }
+
+        .conBottom-ul {
+            list-style-type: none;
+        }
+
+        .conBottom-ul li {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .header-left-botton a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            line-height: 32px;
+
+        }
+
+        .header-left-botton a:hover {
+            color: blue;
+
+        }
+
+        .header-left-botton li {
+            color: white;
+            background-image: url("../img/2.png");
+            background-repeat: no-repeat;
+            background-position: 170px center;
+
+        }
+
+        .redtext {
+            color: red;
+        }
+
+        .blacktext {
+            color: black;
+        }
+
+        .headerbanner {
+            width: 1200px;
+            height: 398px;
+            margin: 0 auto;
+            background-color: yellow;
+        }
+
+        .header-left {
+            width: 210px;
+            height: 398px;
+            background-color: aqua;
+            float: left;
+
+        }
+
+        .header-center {
+            width: 750px;
+            height: 398px;
+            background-color: cornflowerblue;
+            float: left;
+            position: relative;
+        }
+
+        .header-right {
+            width: 240px;
+            height: 398px;
+            background-color: white;
+            float: left;
+
+        }
+
+        .header-right-first {
+            width: 240px;
+            height: 100px;
+            background-color: blueviolet;
+            position: relative;
+        }
+
+        .header-right-second {
+            width: 240px;
+            height: 100px;
+
+            position: relative;
+        }
+        .header-right-third{
+            width: 240px;
+            height: 198px;
+            position: relative;
+        }
+        .header-right-second ul {
+            list-style-type: none;
+            position: absolute;
+            top: 15px;
+        }
+
+        .header-right-second a {
+            text-decoration: none;
+            font-size: 12px;
+            color: gray;
+        }
+
+        .header-center > ul {
+            list-style-type: none;
+            position: absolute;
+            top: 360px;
+            left: 200px;
+        }
+
+        .header-center li {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-color: whitesmoke;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .banner-one {
+            width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        .top {
+            width: 1200px;
+            border: 1px solid black;
+            overflow: hidden;
+            border: none;
+
+        }
+
+        .top-one {
+            font-size: 14px;
+            float: left;
+
+        }
+
+        .top-one > h4 {
+            color: red;
+        }
+
+        .top-two {
+            width: 350px;
+            height: 14px;
+
+            float: right;
+        }
+
+        .top-two > ul {
+            list-style-type: none;
+        }
+
+        .top-two li {
+
+            display: inline-block;
+        }
+
+        .top-two a {
+            font-size: 12px;
+            text-align: center;
+            color: black;
+            line-height: 20px;
+            text-decoration: none;
+        }
+
+        .gun {
+            width: 1px;
+            height: 12px;
+            background-color: black;
+        }
+
+        .bannerbody {
+            width: 1200px;
+            height: 360px;
+
+            float: left;
+            margin-top: 10px;
+
+            border-top: 2px solid red;
+        }
+
+        .bannerbody-1 {
+            width: 210px;
+            height: 360px;
+
+            float: left;
+        }
+
+        .bannerbody-2 {
+            width: 330px;
+            height: 360px;
+
+            float: left;
+        }
+
+        .bannerbody-3 {
+            width: 220px;
+            height: 360px;
+
+            float: left;
+            text-align: center;
+        }
+
+        .bannerbody-4 {
+            width: 220px;
+            height: 340px;
+            padding-top: 20px;
+            float: left;
+            text-align: center;
+
+        }
+
+        .bannerbody-5 {
+            width: 220px;
+            height: 360px;
+
+            float: left;
+            text-align: center;
+        }
+
+        .bannerbody-1-top {
+            width: 200px;
+            height: 160px;
+
+            padding-top: 20px;
+            padding-left: 10px;
+
+        }
+
+        .bannerbody-1-top ul {
+            list-style-type: none; /*去标识符*/
+
+        }
+
+        .bannerbody-1-top li {
+            display: inline-block;
+            width: 80px;
+            line-height: 40px;
+
+            /*转换成行内块元素*/
+        }
+
+        .bannerbody-1-top a {
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            /*去下划线*/
+        }
+
+        .bannerbody-1-bottom {
+            width: 210px;
+            height: 180px;
+
+            text-align: center;
+        }
+
+        .bannerbody-3-top {
+            width: 210px;
+            height: 160px;
+            padding-top: 20px;
+
+        }
+
+        .bannerbody-3-botton {
+            width: 210px;
+            height: 160px;
+            padding-top: 20px;
+
+        }
+
+        span {
+            font-size: 12px;
+            color: gray;
+        }
+
+        .bannerbody-5-top {
+            width: 210px;
+            height: 160px;
+            padding-top: 20px;
+        }
+
+        .bannerbody-5-botton {
+            width: 210px;
+            height: 160px;
+            padding-top: 20px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .demospan {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            background-image: url("../img/indexhead_sprite.png");
+            background-repeat: no-repeat;
+            background-position: -75px -85px;
+        }
+
+        .demo1 {
+
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 20px;
+            background-image: url("../img/nav.png");
+            background-position: 0px 0px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+
+        }
+
+        .demo2 {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: inline-block;
+            background-image: url("../img/nav.png");
+            background-position: 0px -47px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .demo3 {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: inline-block;
+            background-image: url("../img/nav.png");
+            background-position: 0px -90px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .demo4 {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: inline-block;
+            background-image: url("../img/nav.png");
+            background-position: 0px -135px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .demo5 {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: inline-block;
+            background-image: url("../img/nav.png");
+            background-position: 0px -172px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .demo6 {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: inline-block;
+            background-image: url("../img/nav.png");
+            background-position: 0px -211px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .demo7 {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: inline-block;
+            background-image: url("../img/nav.png");
+            background-position: 0px -251px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .demo8 {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: inline-block;
+            background-image: url("../img/nav.png");
+            background-position: 0px -291px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .demo9 {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: inline-block;
+            background-image: url("../img/nav.png");
+            background-position: 0px -331px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .demo10 {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: inline-block;
+            background-image: url("../img/nav.png");
+            background-position: 0px -371px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .demo11 {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: inline-block;
+            background-image: url("../img/nav.png");
+            background-position: 0px -406px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .demo12 {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 20px;
+            display: inline-block;
+            background-image: url("../img/nav.png");
+            background-position: 0px -445px;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .shopstyle {
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            background-image: url("../img/indexhead_sprite.png");
+            background-position: -278px -253px;
+            margin-right: 5px;
+        }
+
+        .card1 {
+            width: 60px;
+            height: 80px;
+            float: left;
+            background-color: cornflowerblue;
+            margin-left: 15px;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .card2 {
+            width: 60px;
+            height: 80px;
+            float: left;
+            background-color: cornflowerblue;
+            margin-left: 15px;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .card3 {
+            width: 60px;
+            height: 80px;
+            float: left;
+            background-color: cornflowerblue;
+            margin-left: 15px;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .divcard {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+        }
+
+        #cardtittle1 {
+            position: absolute;
+            left: 10px;
+            top: 50px;
+        }
+
+        #cardtittle2 {
+            position: absolute;
+            top: 50px;
+        }
+
+        #cardtittle3 {
+            position: absolute;
+            left: 10px;
+            top: 50px;
+        }
+
+        .chose {
+            height: 40px;
+            width: 240px;
+            border-top: 1px solid black;
+
+        }
+
+        .chose li {
+            display: inline-block;
+        }
+
+        .chose a {
+            color: gray;
+            text-decoration: none;
+            display: inline-block;
+            width: 79px;
+            height: 40px;
+            background-color: #c8c8c8;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        #tabactive {
+            color: red;
+            background-color: whitesmoke;
+            border-right: 1px solid black;
+        }
+
+        .lottery {
+            border-right: 1px solid black;
+        }
+        #money{
+            color: red;
+        }
+        label{
+            display: inline-block;
+            width: 70px;
+            text-align: right;
+        }
+        .ups{
+            width: 240px;
+
+            position: absolute;
+            top:80px;
+            left: 0px;
+        }
+        .daily   {
+            width: 1200px;
+            height:642px;
+            background-color: white;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-top:400px;
+        }
+        .daily-first{
+            width: 1200px;
+            overflow: hidden;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+        .daily-second{
+            width: 1200px;
+            height: 600px;
+            background-color:white;
+            border-top: 2px solid lawngreen;
+        }
+        .daily-1{
+            width: 210px;
+            height: 600px;
+            background-color: darkturquoise;
+            float: left;
+        }
+        .daily-2 {
+            width: 330px;
+            height: 600px;
+            background-color: red;
+            float: left;
+        }
+        .daily-3{
+             width: 220px;
+             height: 600px;
+             background-color: deeppink;
+            float: left;
+         }
+        .daily-4{
+              width: 220px;
+              height: 600px;
+              background-color:violet;
+            float: left;
+          }
+        .daily-5{
+               width: 220px;
+               height: 600px;
+               background-color:#c8c8c8;
+            float: left;
+           }
+        .daily-1-top{
+            width: 200px;
+            height: 180px;
+            padding-top:20px;
+            padding-left: 10px;
+            background-color: white;
+
+        }
+        .daily-1-center{
+            width: 210px;
+            height: 229px;
+            position: relative;
+            background-color:white;
+            text-align: center;
+            border-bottom: 1px solid gainsboro;
+        }
+        .daily-1-center h4{
+            color:greenyellow;
+        }
+        .daily-1-right{
+            width: 210px;
+            height: 170px;
+            background-color:white;
+            position: relative;
+            text-align: center;
+        }
+        .daily-2-top{
+            width: 330px;
+            height: 400px;
+            background-color: coral;
+            position: relative;
+        }
+        .daily-2-button{
+            width: 330px;
+            height: 200px;
+            position: relative;
+            background-color:white;
+        }
+        .daily-3-top{
+            width: 220px;
+            height: 189px;
+            background-color: white;
+            text-align: center;
+            padding-top: 10px;
+            border-bottom: 1px solid gainsboro;
+        }
+        .daily-3-center{
+            width: 220px;
+            height: 189px;
+            background-color: white;
+            text-align: center;
+            padding-top: 10px;
+            border-bottom: 1px solid gainsboro;
+        }
+        .daily-3-right{
+            width: 219px;
+            height: 190px;
+            background-color: white;
+            text-align: center;
+            padding-top: 10px;
+            border-left: 1px solid gainsboro;
+
+        }
+        .daily-4-top{
+            width:219px;
+            height: 389px;
+            background-color:white;
+            text-align: center;
+            padding-top: 10px;
+            border-left: 1px solid gainsboro;
+            border-bottom: 1px solid gainsboro;
+        }
+        .daily-4-button{
+            width:219px;
+            height: 190px;
+            background-color:white;
+            text-align: center;
+            padding-top: 10px;
+            border-left: 1px solid gainsboro;
+        }
+        .daily-5-top{
+            width: 219px;
+            height: 189px;
+            background-color:white;
+            padding-top: 10px;
+            text-align: center;
+            border-bottom: 1px solid gainsboro;
+            border-left: 1px solid gainsboro;
+        }
+        .daily-5-button{
+            width: 219px;
+            height: 390px;
+            background-color:white;
+            padding-top: 10px;
+            text-align: center;
+            border-left: 1px solid gainsboro;
+        }
+        .foot{
+            width: 1200px;
+            height:150 px;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: gainsboro;
+            margin-top: 50px;
+        }
+        .daily-left h4{
+            font-size: 14px;
+            color: greenyellow;
+            float: left;
+        }
+        .daily-right{
+            font-size:12px;
+            width: 350px;
+            float:right;
+
+        }
+        .daily-right ul{
+            list-style-type: none;
+        }
+        .daily-right li{
+            display: inline-block;
+        }
+        .daily-right a{
+            font-size: 12px;
+            text-align: center;
+            color: black;
+            line-height: 20px;
+            text-decoration: none;
+        }
+        .daily-1-top ul{
+            list-style-type: none;
+
+        }
+        .daily-1-top a{
+            text-decoration: none;
+            color: #000;
+        }
+        .daily-1-top li{
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+        }
+        .imgff{
+            position: absolute;
+            left: 10px;
+            top:49px;
+        }
+        .imgff2{
+            position: absolute;
+            top: 59px;
+            left: 10px;
+        }
+        .daily-2-top ul{
+            list-style-type: none;
+            position: absolute;
+            top: 330px;
+            left: 100px;
+        }
+        .daily-2-top li{
+            display: inline-block;
+            height:20px;
+            width: 40px;
+            background-color: white;
+
+        }
+        #lili{
+            background-color: red;
+        }
+        .daily-2-button-left{
+             width: 200px;
+             height: 200px;
+             float: left;
+
+         }
+        .andh4{
+            width: 199px;
+            height: 100px;
+            background-color: white;
+            position: relative;
+            border-left: 1px solid gainsboro;
+        }
+        .andh5{
+            width: 199px;
+            height: 100px;
+            background-color:white;
+            position: relative;
+            border-left: 1px solid gainsboro;
+        }
+        .daily-2-button-right{
+            width: 130px;
+            height: 190px;
+            float: left;
+            padding-top: 10px;
+        }
+        .andh5 h3{
+            color: white;
+        }
+        .wirte{
+            background-color: red;
+            position: absolute;
+            top: 0px;
+            left: 20px;
+        }
+        .andh4 h4{
+            position: absolute;
+            left: 20px;
+            top: 50px;
+        }
+        .andh4 span{
+            position: absolute;
+            left: 20px;
+            top: 70px;
+        }
+        .foot1{
+            width: 1200px;
+            height: 30px;
+            background-color: beige;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .foot2{
+            width: 1200px;
+            height: 30px;
+            background-color: aqua;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .foot3{
+            width: 1200px;
+            height: 30px;
+            background-color: yellow;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .foot ul {
+            list-style-type: none;
+        }
+        .foot li{
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .foot a{
+            text-decoration: none;
+            font-size: 12px;
+            color:grey;
+        }
+
+    </style>
+</head>
+<body>
+<div class="sum">
+
+    <div class="first">
+        <div class="first-left">
+            <span>Hi请<a href="#" class="little">登录</a>/ <a href="#" class="little">注册</a></span>
+        </div>
+        <div class="first-right">
+            <ul>
+                <li><a href="#">我的1号店</a><span class="shopstyle"></span></li>
+                <li class="gun2"></li>
+                <li><a href="#">收藏夹</a><span class="shopstyle"></span></li>
+                <li class="gun2"></li>
+                <li><a href="#">掌上1号店</a><span class="shopstyle"></span></li>
+                <li class="gun2"></li>
+                <li><select name="serve" size="1" id="servesum">
+                    <option value="serve1">客户服务</option>
+                    <option value="serve2">包裹跟踪</option>
+                    <option value="serve3">常见问题</option>
+                    <option value="serve4">在线投诉</option>
+                    <option value="serve5">配送范围</option>
+                </select></li>
+                <li class="gun2"></li>
+                <li><a href="#">网站导航</a><span class="shopstyle"></span></li>
+                <li class="gun2"></li>
+                <li><a href="#">关于我们</a><span class="shopstyle"></span></li>
+                <li class="gun2"></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="second">
+        <div class="second-left">
+            <img class="logo" src="../img/logo.png" width="88" height="72"/>
+        </div>
+        <div class="second-right">
+            <div class="second-right-one">
+                <input type="button" value="商品" class="btna"/><input type="text" name="searchtext" class="textone"
+                                                                     placeholder="请输入关键字"/><input
+                    type="submit" value="搜索" class="btnb"/>
+            </div>
+            <div class="second-right-two">
+                <ul>
+                    <li><a href="#">毛巾</a></li>
+                    <li><a href="#">卫生纸</a></li>
+                    <li><a href="#">电池</a></li>
+                    <li><a href="#">洗发露</a></li>
+                    <li><a href="#">衣服</a></li>
+                    <li><a href="#">鞋子</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+    <!--大头部-->
+    <div class="sumheadr">
+        <!-- 大头部导航条-->
+        <div class="header-top">
+            <div class="header-top-left">
+                <h3 class="title">所有商品分类 <span class="demospan"></span></h3>
+
+            </div>
+
+            <div class="header-top-right">
+                <ul>
+                    <li><a href="#" class="redtext">首页</a></li>
+                    <li><a href="#" class="redtext">自营</a></li>
+                    <li><a href="#" class="redtext">1号团</a></li>
+                    <li><a href="#" class="blacktext">1号商城</a></li>
+                    <li><a href="#" class="blacktext">闪购</a></li>
+                    <li><a href="#" class="blacktext">活色生鲜</a></li>
+                    <li><a href="#" class="blacktext">医药</a></li>
+                    <li><a href="#" class="blacktext">1号钱包</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--大头部身体-->
+        <div class="header">
+            <div class="headerbanner">
+                <div class="header-left">
+
+                    <div class="header-left-botton">
+                        <ul class="conBottom-ul">
+                            <li><span class="demo1"></span><a href="#">进口食品、生鲜</a></li>
+                            <li><span class="demo2"></span><a href="#">食品、</a><a href="#">饮料、</a><a href="#">酒</a></li>
+                            <li><span class="demo3"></span><a href="#">母婴、玩具、童装</a></li>
+                            <li><span class="demo4"></span><a href="#">家居、家庭清洁、纸品</a></li>
+                            <li><span class="demo5"></span><a href="#">美妆、个人护理、洗护</a></li>
+                            <li><span class="demo6"></span><a href="#">女装、内衣、中老年</a></li>
+                            <li><span class="demo7"></span><a href="#">鞋靴、箱包、腕表配饰</a></li>
+                            <li><span class="demo8"></span><a href="#">男装、户外、户外健身</a></li>
+                            <li><span class="demo9"></span><a href="#">手机、数码、电脑办公</a></li>
+                            <li><span class="demo10"></span><a href="#">小家电、大家电、汽车</a></li>
+                            <li><span class="demo11"></span><a href="#">保健滋补、医药、成人</a></li>
+                            <li><span class="demo12"></span><a href="#">礼品、卡、旅游、充值</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="header-center">
+                    <img src="../img/banner.jpg">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+                <div class="header-right">
+                    <div class="header-right-first">
+                        <div class="card1">
+                            <div class="divcard">
+                                <img src="../img/1.jpg" width="50" height="50"/>
+                            </div>
+
+                            <span id="cardtittle1">0元试用</span>
+                        </div>
+                        <div class="card2">
+                            <div class="divcard">
+                                <img src="../img/2.jpg" width="50" height="50"/>
+                            </div>
+
+                            <span id="cardtittle2">会员俱乐部</span>
+                        </div>
+                        <div class="card3">
+                            <div class="divcard">
+                                <img src="../img/3.jpg" width="50" height="50"/>
+                            </div>
+
+                            <span id="cardtittle3">礼品卡</span>
+                        </div>
+                    </div>
+                    <div class="header-right-second">
+                        <ul>
+                            <li><span>【社区】</span><a href="#">当红明星教你送七夕情人礼！</a></li>
+                            <li><span>【社区】</span><a href="#">全球口碑姨妈巾都在这了！</a></li>
+                            <li><span>【促销】</span><a href="#">v3会员 甜蜜 免费领</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="header-right-third">
+                        <div class="chose">
+                            <a href="#" id="tabactive">话费充值</a><a href="#" class="lottery">彩票</a><a href="#" class="internet">网游点卡</a>
+                        </div>
+                        <div class="ups">
+                            <form action="#" method="post">
+                               <div>
+                                   <label for="number">手机号码:</label>
+                                   <input type="text" id="number" name="phonenumber"/>
+                               </div>
+                                <div>
+                                    <label>面值:</label>
+                                    <select name="costnumber" size="1">
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>金额:</label>
+                                    <span id="money">￥ 10.14</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--中间第一个盒子-->
+    <div class="banner-one">
+        <!--中间第一个盒子的头部-->
+        <div class="top">
+            <div class="top-one"><h4>食品饮料</h4></div>
+            <div class="top-two">
+
+                <ul>
+                    <li><a href="#">咖啡</a></li>
+                    <li class="gun"></li>
+                    <li><a href="#">休闲零食</a></li>
+                    <li class="gun"></li>
+                    <li><a href="#">饼干糕点</a></li>
+                    <li class="gun"></li>
+                    <li><a href="#">啤酒</a></li>
+                    <li class="gun"></li>
+                    <li><a href="#">粮油米面</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--中间第一个盒子身体-->
+        <div class="bannerbody">
+            <div class="bannerbody-1">
+                <div class="bannerbody-1-top">
+                    <ul>
+                        <li><a href="#">饼干糕点</a></li>
+                        <li><a href="#">休闲零食</a></li>
+                        <li><a href="#">饮料果汁</a></li>
+                        <li><a href="#">牛奶乳品</a></li>
+                        <li><a href="#">冲饮谷物</a></li>
+                        <li><a href="#">营养保健</a></li>
+                    </ul>
+                </div>
+                <div class="bannerbody-1-bottom">
+                    <img src="../img/sec1.jpg" height="180" width="190"/>
+                </div>
+            </div>
+            <div class="bannerbody-2">
+                <img src="../img/sec1-1.jpg" height="360"/>
+            </div>
+            <div class="bannerbody-3">
+                <div class="bannerbody-3-top"><h4>吃货天堂</h4><span>满49减10</span><img src="../img/sec1-2.jpg" height="110"
+                                                                                   width="190"></div>
+                <div class="bannerbody-3-botton"><h4>1号酒窖</h4><span>百咸哈啤酒两件7折</span><img src="../img/sec1-3.jpg"
+                                                                                         width="190" height="110"></div>
+            </div>
+            <div class="bannerbody-4">
+                <h4>夏季美食嘉年华</h4><span>粮油1元抢；爆款5折起</span>
+                <img src="../img/sec1-4.jpg" height="290" width="190"/>
+            </div>
+            <div class="bannerbody-5">
+                <div class="bannerbody-5-top"><h4>饮料饮品</h4><span>爆款满99减25</span><img src="../img/sec1-5.jpg" width="190"
+                                                                                     height="110"></div>
+                <div class="bannerbody-5-botton"><h4>甜蜜七夕好礼</h4><span>燕窝&nbsp;买一送一</span><img src="../img/sec1-6.jpg"
+                                                                                              height="110" width="190">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--中间第二个盒子-->
+    <div class="daily">
+        <div class="daily-first">
+            <div class="daily-left">
+                <h4>个护厨卫</h4>
+            </div>
+            <div class="daily-right">
+                <ul>
+                    <li><a href="#">面部防晒</a></li>
+                    <li class="gun"></li>
+                    <li><a href="#">沐浴清洁</a></li>
+                    <li class="gun"></li>
+                    <li><a href="#">纸巾</a></li>
+                    <li class="gun"></li>
+                    <li><a href="#">洗衣液</a></li>
+                    <li class="gun"></li>
+                    <li><a href="#">驱蚊神器</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="daily-second">
+            <div class="daily-1">
+                <div class="daily-1-top">
+                    <ul>
+                        <li><a href="#">洗发护发</a></li>
+                        <li><a href="#">脱毛膏/贴</a></li>
+                        <li><a href="#">牙刷牙膏</a></li>
+                        <li><a href="#">抽纸</a></li>
+                        <li><a href="#">消毒液</a></li>
+                        <li><a href="#">保鲜膜</a></li>
+                    </ul>
+                </div>
+                <div class="daily-1-center">
+                    <h4>蓝月亮洁净盛典</h4>
+                    <span>热销商品5折起</span>
+                    <img class="imgff" src="../img/sec1-7.jpg" width="190" height="180"/>
+                </div>
+                <div class="daily-1-right">
+                    <h4>妮飘满99减25</h4>
+                    <span>与你的浪漫七夕</span>
+                    <img class="imgff2" src="../img/sec1-17.jpg" width="190" height="110"/>
+                </div>
+            </div>
+            <div class="daily-2">
+                <div class="daily-2-top">
+                    <img src="../img/sec1-8.jpg" width="330" height="360"/>
+                    <ul>
+                        <li id="lili"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="daily-2-button">
+                   <div class="daily-2-button-left">
+                       <div class="andh4">
+                           <h4>逼格生活由我打造</h4>
+                           <span>新品上新</span>
+                       </div>
+                       <div class="andh5">
+                           <div class="wirte"><h3>品质生活轻松家务</h3></div>
+                       </div>
+                   </div>
+                    <div class="daily-2-button-right">
+                        <img src="../img/sec1-16.jpg" height="166" width="130"/>
+                    </div>
+                </div>
+            </div>
+            <div class="daily-3">
+                <div class="daily-3-top">
+
+                        <h4>自营纸制品品牌团</h4>
+                        <span>团购疯抢中</span>
+                        <img src="../img/sec1-9.jpg" width="190" height="110"/>
+
+
+                </div>
+                <div class="daily-3-center">
+                    <h4>自营衣物洗护团</h4>
+                    <span>爆款5折起</span>
+                    <img src="../img/sec1-10.jpg" width="190" height="110"/>
+                </div>
+                <div class="daily-3-right">
+                    <h4>自营家庭清洁品牌团</h4>
+                    <span>爆款团购2.3折起</span>
+                    <img src="../img/sec1-10.jpg" width="190" height="110"/>
+                </div>
+            </div>
+            <div class="daily-4">
+                <div class="daily-4-top">
+                    <h4>自营美容护理</h4>
+                    <span>8.18爆款 一贵就赔</span>
+                    <img src="../img/sec1-11.jpg" width="190" height="290"/>
+                </div>
+                <div class="daily-4-button">
+                    <h4>自营女性护理</h4>
+                    <span>更多商品第二件2折</span>
+                    <img src="../img/sec1-14.jpg" width="190" height="110"/>
+                </div>
+            </div>
+            <div class="daily-5">
+                <div class="daily-5-top">
+                    <h4>自营口腔护理</h4>
+                    <span>更多商品第二件2折</span>
+                    <img src="../img/sec1-12.jpg" width="190" height="110"/>
+                </div>
+                <div class="daily-5-button">
+                    <h4>自营洗发护发</h4>
+                    <span>更多商品第二件2折</span>
+                    <img src="../img/sec1-13.jpg" width="190" height="290" />
+                </div>
+            </div>
+        </div>
+    </div>
+ <div class="foot">
+     <div class="foot1">
+         <ul>
+             <li><a href="#">关于1号店</a></li>
+             <li class="gun"></li>
+             <li><a href="#">我们的团队</a></li>
+             <li class="gun"></li>
+             <li><a href="#">网站联盟</a></li>
+             <li class="gun"></li>
+             <li><a href="#">热门搜索</a></li>
+             <li class="gun"></li>
+             <li><a href="#">友情链接</a></li>
+             <li class="gun"></li>
+             <li><a href="#">1号社区</a></li>
+             <li class="gun"></li>
+             <li><a href="#">诚征英才</a></li>
+             <li class="gun"></li>
+             <li><a href="#">商家登录</a></li>
+             <li class="gun"></li>
+             <li><a href="#">供应商登录</a></li>
+             <li class="gun"></li>
+             <li><a href="#">放心搜</a></li>
+             <li class="gun"></li>
+             <li><a href="#">1号店新品</a></li>
+             <li class="gun"></li>
+             <li><a href="#">开放平台</a></li>
+
+         </ul>
+     </div>
+     <div class="foot2">
+         <li><a href="#">沪IPC备13044278号</a></li>
+         <li class="gun"></li>
+         <li><a href="#">合字B1.B2-20130004</a></li>
+         <li class="gun"></li>
+         <li><a href="#">营业执照</a></li>
+         <li class="gun"></li>
+         <li><a href="#">互联网药品信息服务资格证</a></li>
+         <li class="gun"></li>
+         <li><a href="#">互联网药品交易服务资格证</a></li>
+
+     </div>
+     <div class="foot3">
+         <ul>
+             <li><a href="#">Copyright@ 1号店网上超市 2001-2015, All Rights Reserved</a></li>
+         </ul>
+     </div>
+ </div>
+  
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .sum{
+            width:100%;
+            height:398px;
+            background-color: palevioletred;
+        }
+        .headerbanner{
+            width: 1200px;
+            height: 398px;
+            background-color: yellow;
+            margin: 0 auto;
+        }
+        .header-left{
+            width: 225px;
+            height: 398px;
+            background-color: aqua;
+            float:left;
+
+        }
+        .header-center{
+            width: 750px;
+            height: 398px;
+            background-color: cornflowerblue;
+            float:left;
+            position: relative;
+        }
+        .header-right {
+            width: 225px;
+            height: 398px;
+            background-color: hotpink;
+            float:left;
+
+        }
+        .header-center>ul{
+           list-style-type: none;
+            position: absolute;
+            top:360px;
+            left: 600px;
+        }
+        .header-center li{
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-color: whitesmoke;
+            border-radius:50% ;
+            text-align: center;
+            line-height: 20px;
+
+        }
+    </style>
+</head>
+<body>
+<div  class="sum">
+    <div class="headerbanner">
+        <div class="header-left" >
+
+        </div>
+        <div class="header-center">
+            <img src="../img/banner.jpg">
+             <ul>
+                 <li>1</li>
+                 <li>2</li>
+                 <li>3</li>
+                 <li>4</li>
+                 <li>5</li>
+             </ul>
+        </div>
+        <div class="header-right"></div>
+    </div>
+</div>
+</body>
+</html>
